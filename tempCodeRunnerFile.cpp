@@ -64,13 +64,13 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 					:: MessageBox(hwnd,t,"Result",MB_OK);
 				}
 				if(LOWORD(wParam)==3){
-					float re=atof(text1)/atof(text2);
+					float re=atof(text1)*atof(text2);
 					char t[100];
 					sprintf(t, "%f", re);
 					:: MessageBox(hwnd,t,"Result",MB_OK);
 				}
 				if(LOWORD(wParam)==4){
-					float re=atof(text1)*atof(text2);
+					float re=atof(text1)/atof(text2);
 					char t[100];
 					sprintf(t, "%f", re);
 					:: MessageBox(hwnd,t,"Result",MB_OK);
